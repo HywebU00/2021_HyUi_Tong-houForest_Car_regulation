@@ -5550,7 +5550,7 @@ img.loaded {
 
 .header > .container .subtitle {
   background-image: url(../images/img/subtitle_bg.png);
-  bottom: -1px;
+  bottom: -2px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -5879,6 +5879,7 @@ footer .footer_link li a:hover, footer .footer_link li a:focus {
 
 footer p {
   line-height: 1.65em;
+  text-align: center;
 }
 
 footer .update,
@@ -5930,7 +5931,7 @@ select::-ms-expand {
 }
 
 .form_grid .form_grp {
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px solid #f0f0f0;
   padding: 0.5em 0;
 }
 
@@ -6267,6 +6268,70 @@ select::-ms-expand {
   }
 }
 
+.flex-form .form_content.form_col-6-6 > .form_grp,
+.flex-form .form_content.form_col-6-6 > input[type="text"],
+.flex-form .form_content.form_col-6-6 > select {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-6-6 > .form_grp,
+  .flex-form .form_content.form_col-6-6 > input[type="text"],
+  .flex-form .form_content.form_col-6-6 > select {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+.flex-form .form_content.form_col-6-6 > input[type="email"],
+.flex-form .form_content.form_col-6-6 > select {
+  -ms-flex-preferred-size: calc(50% - 0.6em);
+      flex-basis: calc(50% - 0.6em);
+  width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-6-6 > input[type="email"],
+  .flex-form .form_content.form_col-6-6 > select {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+.flex-form .form_content.form_col-6-6 > input[type="tel"],
+.flex-form .form_content.form_col-6-6 > select {
+  -ms-flex-preferred-size: calc(50% - 0.6em);
+      flex-basis: calc(50% - 0.6em);
+  width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-6-6 > input[type="tel"],
+  .flex-form .form_content.form_col-6-6 > select {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+.flex-form .form_content.form_col-6-6 select {
+  -ms-flex-preferred-size: calc(50% - 0.6em);
+      flex-basis: calc(50% - 0.6em);
+  width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-6-6 select {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+}
+
 .flex-form .form_content.form_col-3-3-6 > .form_grp,
 .flex-form .form_content.form_col-3-3-6 > input[type="text"],
 .flex-form .form_content.form_col-3-3-6 > select {
@@ -6294,6 +6359,52 @@ select::-ms-expand {
   .flex-form .form_content.form_col-3-3-6 > .form_grp:last-child,
   .flex-form .form_content.form_col-3-3-6 > input[type="text"]:last-child,
   .flex-form .form_content.form_col-3-3-6 > select:last-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.flex-form .form_content.form_col-3-5-4 > .form_grp,
+.flex-form .form_content.form_col-3-5-4 > input[type="tel"],
+.flex-form .form_content.form_col-3-5-4 > select {
+  -ms-flex-preferred-size: calc(15% - 0.6em);
+      flex-basis: calc(15% - 0.6em);
+}
+
+.flex-form .form_content.form_col-3-5-4 > .form_grp:nth-child(2),
+.flex-form .form_content.form_col-3-5-4 > input[type="tel"]:nth-child(2),
+.flex-form .form_content.form_col-3-5-4 > select:nth-child(2) {
+  -ms-flex-preferred-size: calc(35% - 0.6em);
+      flex-basis: calc(35% - 0.6em);
+}
+
+.flex-form .form_content.form_col-3-5-4 > .form_grp:last-child,
+.flex-form .form_content.form_col-3-5-4 > input[type="tel"]:last-child,
+.flex-form .form_content.form_col-3-5-4 > select:last-child {
+  -ms-flex-preferred-size: calc(90% - (65% + 1.2em));
+      flex-basis: calc(90% - (65% + 1.2em));
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-3-5-4 > .form_grp,
+  .flex-form .form_content.form_col-3-5-4 > input[type="tel"],
+  .flex-form .form_content.form_col-3-5-4 > select {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.flex-form .form_content.form_col-3-5-4 > .form_grp:last-child,
+.flex-form .form_content.form_col-3-5-4 > input[type="text"]:last-child,
+.flex-form .form_content.form_col-3-5-4 > select:last-child {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-3-5-4 > .form_grp:last-child,
+  .flex-form .form_content.form_col-3-5-4 > input[type="text"]:last-child,
+  .flex-form .form_content.form_col-3-5-4 > select:last-child {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -6360,6 +6471,62 @@ select::-ms-expand {
   .flex-form .form_content.form_col-4-8 > select:last-child {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+.flex-form .form_content.form_col-8-4 > .form_grp,
+.flex-form .form_content.form_col-8-4 > input[type="text"],
+.flex-form .form_content.form_col-8-4 > select {
+  -ms-flex-preferred-size: calc(100% / 3 * 2 - 0.6em);
+      flex-basis: calc(100% / 3 * 2 - 0.6em);
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-8-4 > .form_grp,
+  .flex-form .form_content.form_col-8-4 > input[type="text"],
+  .flex-form .form_content.form_col-8-4 > select {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.flex-form .form_content.form_col-8-4 > input[type="email"],
+.flex-form .form_content.form_col-8-4 > select {
+  -ms-flex-preferred-size: calc(100% / 3 * 2 - 0.6em);
+      flex-basis: calc(100% / 3 * 2 - 0.6em);
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-8-4 > input[type="email"],
+  .flex-form .form_content.form_col-8-4 > select {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.flex-form .form_content.form_col-8-4 > input[type="tel"],
+.flex-form .form_content.form_col-8-4 > select {
+  -ms-flex-preferred-size: calc(100% / 3 * 2 - 0.6em);
+      flex-basis: calc(100% / 3 * 2 - 0.6em);
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-8-4 > input[type="tel"],
+  .flex-form .form_content.form_col-8-4 > select {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.flex-form .form_content.form_col-8-4 select {
+  -ms-flex-preferred-size: calc(100% / 3 * 2 - 0.6em);
+      flex-basis: calc(100% / 3 * 2 - 0.6em);
+}
+
+@media screen and (max-width: 575px) {
+  .flex-form .form_content.form_col-8-4 select {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
@@ -7085,7 +7252,7 @@ select::-ms-expand {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  padding: 0.3em 0;
+  padding: 1em 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -7437,8 +7604,8 @@ input[type="checkbox"]:checked,
 input[type="checkbox"]:focus,
 input[type="radio"]:checked,
 input[type="radio"]:focus {
-  border-color: #7e6b5a;
-  background-color: #7e6b5a;
+  border-color: #656565;
+  background-color: #656565;
   outline: none;
 }
 
@@ -7453,8 +7620,8 @@ input[type="checkbox"]:checked {
 }
 
 input[type="radio"]:checked {
-  -webkit-box-shadow: #fff 0 0 0 3px inset, #7e6b5a 0 0 0 2px;
-          box-shadow: #fff 0 0 0 3px inset, #7e6b5a 0 0 0 2px;
+  -webkit-box-shadow: #fff 0 0 0 3px inset, #656565 0 0 0 2px;
+          box-shadow: #fff 0 0 0 3px inset, #656565 0 0 0 2px;
 }
 
 input[type="radio"]:focus {
@@ -8897,5 +9064,161 @@ h2.title {
         -ms-flex: 1 1 calc(100% / 1);
             flex: 1 1 calc(100% / 1);
   }
+}
+
+.application_content {
+  color: #656565;
+  margin-bottom: 12em;
+}
+
+.application_content .form_title {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.application_content .form_title h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.65em;
+  color: #7e6b5a;
+}
+
+.application_content .form_title p {
+  margin-top: 0;
+  font-weight: 800;
+  margin-left: -0.5em;
+  color: #222;
+}
+
+.application_content .application_form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.application_content .application_form::before {
+  content: "";
+  padding-top: 3rem;
+  background: url(../../images/img/form_leaf.png) right no-repeat;
+  width: 100%;
+  height: 412px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.application_content .application_form h3 {
+  color: #222;
+  margin-bottom: 0.6em;
+  margin-left: 0.5em;
+}
+
+.application_content .application_form .form_grid {
+  border-top: 3px solid #222;
+}
+
+.application_content .application_form .form_grid .form_title {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 0.5em;
+  padding-right: 0;
+  color: #666;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 767px) {
+  .application_content .application_form .form_grid .form_title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.application_content .application_form .form_grid .form_content .radio_grp {
+  padding: 0;
+}
+
+.application_content .application_form .form_grid select {
+  height: 43px;
+}
+
+.application_content .application_form .form_grid .form_col-3-5-4 input {
+  height: 43px;
+}
+
+@media screen and (max-width: 575px) {
+  .application_content .application_form .form_grid .form_col-3-5-4 input[type="tel"] {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .application_content .application_form .form_grid .form_col-3-5-4 input[type="tel"]:nth-child(2) {
+    -ms-flex-preferred-size: calc(35% - 0.6em);
+        flex-basis: calc(35% - 0.6em);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .application_content .application_form .form_grid .form_col-3-5-4 input[type="tel"]:last-child {
+    -ms-flex-preferred-size: calc(100% - (55% + 1.2em));
+        flex-basis: calc(100% - (55% + 1.2em));
+  }
+}
+
+.application_content .application_form .form_grid .form_col-6-6 span {
+  margin-left: 0.3em;
+}
+
+.application_content .application_form .form_grid .form_col-6-6 input {
+  height: 43px;
+}
+
+.application_content .application_form .form_grid .form_col-6-6 .calendar_div {
+  border: 1px solid #ccc;
+  background: #fff;
+  -ms-flex-preferred-size: calc(50% - 0.6em);
+      flex-basis: calc(50% - 0.6em);
+  height: 43px;
+  margin: 0.3em;
+  border-radius: 0.2em;
+}
+
+.application_content .application_form .form_grid .form_col-6-6 button {
+  -ms-flex-preferred-size: calc(90% - (65% + 1.2em));
+      flex-basis: calc(90% - (65% + 1.2em));
+  color: #666;
+  height: 43px;
+  font-weight: 800;
+}
+
+.application_content .application_form .form_grid .form_col-6-6 button:hover {
+  background-color: #7e6b5a;
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  .application_content .application_form .form_grid .form_col-6-6 button {
+    -ms-flex-preferred-size: calc(100% - (65% + 1.2em));
+        flex-basis: calc(100% - (65% + 1.2em));
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .application_content .application_form .form_grid .form_col-6-6 button {
+    -ms-flex-preferred-size: calc(50% - 1.2em);
+        flex-basis: calc(50% - 1.2em);
+  }
+}
+
+.application_content .application_form .last-input {
+  border-bottom: none;
+  padding-bottom: 2em;
+  border-bottom: 2px solid #222;
 }
 /*# sourceMappingURL=hyui.css.map */
