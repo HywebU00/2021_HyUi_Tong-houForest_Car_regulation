@@ -7564,7 +7564,7 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #af9e8f;
+  border: 2px solid #af9e8f;
   outline: none;
 }
 
@@ -9200,6 +9200,11 @@ h2.title {
 .application_content .application_form .form_grid .form_col-6-6 button:hover {
   background-color: #7e6b5a;
   color: #fff;
+}
+
+.application_content .application_form .form_grid .form_col-6-6 button:focus {
+  outline: none;
+  border: 2px solid #af9e8f;
 }
 
 @media (max-width: 860px) {
